@@ -84,10 +84,15 @@ main {
     grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
+        vertical-align: middle;
+        border-style: none;
+        width: 100%;
+        height: auto;
+
+        //grid-area: bioimage;
+        //margin: auto;
+        //border-radius: 50%;
+        //border: $secondary-color 3px solid;
     
     }
     
@@ -117,8 +122,8 @@ main {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.7rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
 
     
     img{

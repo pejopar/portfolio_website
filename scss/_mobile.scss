@@ -4,8 +4,12 @@
 
 @include mediaXl{
 
-.projects{
-    grid-template-columns: repeat(4, 1fr);
+    .projects{
+        //display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem;
+        //grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -13,11 +17,14 @@
 
 @include mediaLg{
     .projects{
-        grid-template-columns: repeat(3, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem;
+        //grid-template-columns: repeat(1, 1fr);
     }
 }
 
-// Tablets and small laptops
+// Tablets and  laptops
 @include mediaMd{
     main {
         align-items: center;
@@ -49,7 +56,7 @@
         transform: translate3d(100%,0,0);
 
         .portrait {
-            background: url ('../img/portrait.jpg');
+            background: url ('../img/me.jpg');
             width: 150 px;
             height: 150 px;
         }
@@ -62,12 +69,16 @@
         'bio'
         'job1'
         'job2'
-        'job3';
+        'job3'
+        'job4';
         grid-template-columns: 1fr;
     }
 
     .projects{
-        grid-template-columns: repeat(2, 1fr);
+        //margin-left: auto;
+        //margin-right: auto;
+        //width: 40rem;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -77,6 +88,10 @@
         margin-top: 10vh;
     }
     .projects{
+        //display: block;
+        //margin-left: 1rem;
+        //margin-right: 1rem;
+        //width: 30rem;
         grid-template-columns: 1fr;
-        }
+    }
 }
